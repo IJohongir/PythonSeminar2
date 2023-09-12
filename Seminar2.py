@@ -38,16 +38,16 @@
 
 #7, 10 -> 2, 5 (2 + 5 == 7; 2 * 5 == 10)
 
-S = int(input('Введите сумму чисел: '))
-P = int(input('Введите произведение чисел: '))
+# S = int(input('Введите сумму чисел: '))
+# P = int(input('Введите произведение чисел: '))
 
-for x in range(1001):
-    y=S-x
-    if x*y==P :
-        print("числа задуманные Петей", x ,"," , y)
-        break
-    else:
-        print("-")
+# for x in range(1001):
+#     y=S-x
+#     if x*y==P :
+#         print("числа задуманные Петей", x ,"," , y)
+#         break
+#     else:
+#         print("-")
 
 # Требуется вывести все целые степени двойки (т.е. числа вида 2k), не превосходящие числа N.
 # Пример:
@@ -59,3 +59,23 @@ for x in range(1001):
 # while k<=N:
 #     print(k,end=' ')
 #     k=k*2
+
+list_1 = [1, 11, 6, 7, 8, 15]
+k = 11
+
+# Введите ваше решение ниже
+x=list_1[0]
+
+
+for i in range(len(list_1)):
+    if abs(list_1[i]-k )< abs(x-k) or abs(list_1[i]-k) == abs(k-x) and list_1[i ] < x:
+        x=list_1[i]
+           
+           
+    if k==list_1[i]:
+        x=list_1[i]
+        break
+           
+        
+        
+print(x)
